@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Era Tech | Tienda Online</title>
+  <meta name="description" content="Tienda ecuatoriana de tecnología: laptops, accesorios y más con envío rápido.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+
+<body>
+  <!-- Skip link para accesibilidad -->
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <header>
+    <div class="logo">New Era Tech</div>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#" aria-current="page">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#carrito">🛒 Carrito</a></li>
+        <li><a href="#login" class="btn-login">👤 Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section id="hero" aria-labelledby="t-hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+        <h1 id="t-hero">Tecnología al alcance de tus manos</h1>
+        <p>Innovación, potencia y diseño en cada producto.</p>
+        <a href="#productos" class="btn-principal">Explorar productos</a>
+        </div>
+    </div>
+    </section>
+
+  <main id="contenido">
+    <!-- Productos destacados -->
+
+    <section id="productos" aria-labelledby="t-productos">
+        <h2 id="t-productos">Productos destacados</h2>
+
+         <div class="carousel-container">
+            <button class="carousel-btn prev" aria-label="Anterior">⟨</button>
+
+            <div class="carousel-window">
+            <div class="carousel-track">
+            <!-- Cada article es un producto -->
+            <article class="producto">
+                <img src="../assets/images/laptop1.jpg" alt="Laptop Asus ROG 16”">
+                <h3>Laptop Asus ROG 16”</h3>
+                <p class="precio">$1,299.00</p>
+                <button class="btn-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="producto">
+            <img src="../assets/images/laptop2.jpg" alt="MacBook Pro 14”">
+            <h3>MacBook Pro 14”</h3>
+            <p class="precio">$1,899.00</p>
+            <button class="btn-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="producto">
+            <img src="../assets/images/mouse1.jpg" alt="Mouse Logitech G Pro">
+            <h3>Mouse Logitech G Pro</h3>
+            <p class="precio">$79.99</p>
+            <button class="btn-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="producto">
+            <img src="../assets/images/ipad1.jpg" alt="Ipad Pro M5 256GB">
+            <h3>Ipad Pro M5 256GB</h3>
+            <p class="precio">$1079.99</p>
+            <button class="btn-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="producto">
+                <img src="../assets/images/ipad2.jpg" alt="Ipad Mini 6 Gris">
+                <h3>Ipad Mini 6 Gris</h3>
+                <p class="precio">$899.99</p>
+                <button class="btn-agregar">Agregar al carrito</button>
+            </article>
+
+            <article class="producto">
+                <img src="../assets/images/teclado1.jpg" alt="Teclado Gamer Razer">
+                <h3>Teclado Gamer Razer</h3>
+                <p class="precio">$99.99</p>
+                <button class="btn-agregar">Agregar al carrito</button>
+            </article>
+
+            </div>
+
+            
+            <button class="carousel-btn next" aria-label="Siguiente">⟩</button>
+        </div>
+    </section>
+
+
+    <!-- Ofertas -->
+    <section id="ofertas" aria-labelledby="t-ofertas">
+      <h2 id="t-ofertas">Ofertas especiales</h2>
+      <p>Hasta 30% en portátiles seleccionadas</p>
+      <a href="#productos" class="btn-secundario">Ver ofertas</a>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" aria-labelledby="t-contacto">
+        <h2 id="t-contacto">Contáctanos</h2>
+        <form id="f-contacto" novalidate aria-describedby="ayuda-contacto">
+            <p id="ayuda-contacto">Todos los campos son obligatorios.</p>
+
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required minlength="2"
+                aria-describedby="hint-nombre nombre-err">
+            <small id="hint-nombre">Escribe tu nombre completo (mínimo 2 caracteres).</small>
+            <span id="nombre-err" class="error" role="alert" hidden></span>
+
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" required
+                aria-describedby="hint-correo correo-err">
+            <small id="hint-correo">Formato: usuario@dominio.</small>
+            <span id="correo-err" class="error" role="alert" hidden></span>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required
+                    aria-describedby="hint-mensaje mensaje-err"></textarea>
+            <small id="hint-mensaje">Cuéntanos tu duda o solicitud en pocas líneas.</small>
+            <span id="mensaje-err" class="error" role="alert" hidden></span>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+    <!-- Login -->
+    <section id="login" aria-labelledby="t-login">
+      <h2 id="t-login">Iniciar sesión</h2>
+      <form id="f-login" novalidate>
+        <p id="login-ayuda">Accede con tu correo institucional y contraseña.</p>
+
+        <label for="login-email">Correo institucional</label>
+        <input id="login-email" name="login-email" type="email" required autocomplete="email">
+
+        <label for="login-pass">Contraseña</label>
+        <input id="login-pass" name="login-pass" type="password" required autocomplete="current-password">
+
+        <button type="submit">Ingresar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 New Era Tech. Todos los derechos reservados. | <a href="#hero">Volver arriba</a></p>
+  </footer>
+
+  <script src="../scripts/app.js?v=1.1"></script>
+</body>
+</html>
