@@ -8,4 +8,5 @@
 - `styles/styles.css` — mobile-first, Grid+Flex, dark-friendly
 
 ## 2) VERSION 2.0 PROYECTO POR:
+Revisado y Aprobado por
 JUAN CEVALLOS Y KEVIN SUCUZHANAY
