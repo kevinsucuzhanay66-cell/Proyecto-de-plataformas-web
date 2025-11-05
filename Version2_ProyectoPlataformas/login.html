@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión · New Era Tech</title>
+
+  <!-- Estilos generales del sitio -->
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <!-- Estilos exclusivos del login -->
+  <link rel="stylesheet" href="./styles/login.css" />
+</head>
+<body class="login-page">
+
+  <main class="login-wrapper">
+    <section class="login-card">
+      <div class="login-header">
+        <h1>Bienvenido de nuevo</h1>
+        <p>Accede a tu cuenta para continuar con tus compras.</p>
+      </div>
+
+      <form id="form-login" novalidate>
+        <div class="form-group">
+          <label for="l-email">Correo electrónico</label>
+          <input type="email" id="l-email" placeholder="nombre@dominio.com" required />
+        </div>
+        <div class="form-group">
+          <label for="l-pass">Contraseña</label>
+          <input type="password" id="l-pass" placeholder="Mínimo 6 caracteres" minlength="6" required />
+        </div>
+        <button type="submit" class="btn-login">Iniciar sesión</button>
+        <p id="l-estado" class="estado"></p>
+      </form>
+
+      <footer class="login-footer">
+        <p>¿Olvidaste tu contraseña? <a href="#">Recupérala aquí</a></p>
+        <p><a href="./index.html">Volver al inicio</a></p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="./scripts/app.js" defer></script>
+  <script>window.PAGE = "login";</script>
+</body>
+</html>

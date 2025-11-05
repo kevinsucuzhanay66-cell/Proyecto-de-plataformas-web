@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto · New Era Tech</title>
+  <meta name="description" content="Contáctanos para asesoría en compras de tecnología en Ecuador.">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a href="./index.html" class="brand"><span class="dot"></span> New Era Tech</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="./index.html">Inicio</a>
+      <a href="./productos.html">Productos</a>
+      <a href="./contacto.html" aria-current="page">Contacto</a>
+      <a href="./carrito.html" id="cart-link" class="badge-cart">🛒 Carrito (0)</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1 style="margin:1.2rem 0;">Contacto</h1>
+
+  <p>¿Necesitas asesoría para elegir tu equipo ideal? Escríbenos.</p>
+
+    <form id="form-contacto" class="contact-form" novalidate>
+      <div id="alerta" class="alerta" role="alert"></div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="c-nombre">Nombre y apellido</label>
+          <input id="c-nombre" name="nombre" placeholder="Tu nombre completo" required minlength="3" maxlength="80">
+        </div>
+
+        <div class="form-group">
+          <label for="c-email">Correo electrónico</label>
+          <input id="c-email" name="email" type="email" placeholder="tucorreo@dominio.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="c-telefono">Teléfono</label>
+          <input id="c-telefono" name="telefono" inputmode="tel" pattern="^[0-9+\-\s]{7,20}$" placeholder="+593 99 999 9999" required>
+        </div>
+
+        <div class="form-group">
+          <label for="c-asunto">Asunto</label>
+          <input id="c-asunto" name="asunto" placeholder="Compra / Asesoría / Garantía..." required minlength="3" maxlength="100">
+        </div>
+
+        <div class="form-group">
+          <label for="c-mensaje">Mensaje</label>
+          <textarea id="c-mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas..." required minlength="10" maxlength="500"></textarea>
+        </div>
+
+        <div class="form-check">
+          <input id="c-acepto" name="acepto" type="checkbox" required>
+          <label for="c-acepto">Acepto el uso de mis datos para que me contacten.</label>
+        </div>
+      </div>
+
+      <div class="cta" style="justify-content:flex-end">
+        <button type="button" id="btn-exportar" class="btn">Exportar TXT</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+
+
+  <div class="kv">
+    <p><strong>Modo de guardado:</strong> Por defecto guardamos localmente y puedes “Exportar TXT”.
+    Si ejecutas el backend Node opcional, los mensajes se guardarán en <code>/data/contactos.txt</code>.</p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container"><p>© 2025 New Era Tech</p></div>
+</footer>
+
+<script src="./scripts/app.js" defer></script>
+<script>
+  window.PAGE="contacto";
+  window.BACKEND=false; // cambia a true cuando uses el servidor Node (server/index.js)
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("#form-contacto");
+  const alerta = document.querySelector("#alerta");
+
+  const mostrarAlerta = (msg, tipo="error") => {
+    alerta.textContent = msg;
+    alerta.className = `alerta ${tipo}`;
+    alerta.style.display = "block";
+    setTimeout(() => alerta.style.display = "none", 4000);
+  };
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Obtener campos
+    const nombre = form.querySelector("#c-nombre");
+    const email = form.querySelector("#c-email");
+    const tel = form.querySelector("#c-telefono");
+    const asunto = form.querySelector("#c-asunto");
+    const mensaje = form.querySelector("#c-mensaje");
+    const acepto = form.querySelector("#c-acepto");
+
+    // Validaciones
+    const errores = [];
+    const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    const telRegex = /^[0-9+\-\s]{7,20}$/;
+
+    // Reset estilos
+    form.querySelectorAll("input, textarea").forEach(i => i.classList.remove("error", "valid"));
+
+    if (nombre.value.trim().length < 3) {
+      errores.push("El nombre es demasiado corto.");
+      nombre.classList.add("error");
+    } else nombre.classList.add("valid");
+
+    if (!emailRegex.test(email.value)) {
+      errores.push("El correo electrónico no es válido.");
+      email.classList.add("error");
+    } else email.classList.add("valid");
+
+    if (!telRegex.test(tel.value)) {
+      errores.push("El número de teléfono es inválido.");
+      tel.classList.add("error");
+    } else tel.classList.add("valid");
+
+    if (asunto.value.trim().length < 3) {
+      errores.push("El asunto es muy corto.");
+      asunto.classList.add("error");
+    } else asunto.classList.add("valid");
+
+    if (mensaje.value.trim().length < 10) {
+      errores.push("El mensaje debe tener al menos 10 caracteres.");
+      mensaje.classList.add("error");
+    } else mensaje.classList.add("valid");
+
+    if (!acepto.checked) {
+      errores.push("Debes aceptar el uso de tus datos personales.");
+    }
+
+    if (errores.length > 0) {
+      mostrarAlerta("⚠️ Corrige los siguientes errores: " + errores.join(" "), "error");
+      return;
+    }
+
+    // Si todo está correcto
+    mostrarAlerta("✅ Tu mensaje fue enviado correctamente. ¡Gracias por contactarnos!", "ok");
+    form.reset();
+    form.querySelectorAll("input, textarea").forEach(i => i.classList.remove("valid"));
+  });
+});
+</script>
+
+</body>
+</html>

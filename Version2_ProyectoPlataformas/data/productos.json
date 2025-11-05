@@ -1,0 +1,511 @@
+[
+  {
+    "id": "LT-ROG-16-001",
+    "nombre": "ASUS ROG Strix G16",
+    "marca": "ASUS",
+    "categoria": "Laptops",
+    "precio": 1899.99,
+    "moneda": "USD",
+    "stock": 8,
+    "colores": [
+      { "color": "Negro", "disponible": true },
+      { "color": "Verde", "disponible": true },
+      { "color": "Rojo", "disponible": false }
+    ],
+    "imagen": "./assets/images/laptop_rog.jpg",
+    "imagenes": [
+      "./assets/images/laptop_rog.jpg",
+      "./assets/images/laptop_rog_side.jpg",
+      "./assets/images/laptop_rog_back.jpg"
+    ],
+    "resena": "Laptop gamer 16'' con alto rendimiento para estudio y juego.",
+    "specs": [
+      "Intel Core i7 12ª",
+      "16GB RAM",
+      "RTX 4060 8GB",
+      "SSD 1TB",
+      "Pantalla 165Hz"
+    ]
+  },
+  {
+    "id": "LT-MBP-14-002",
+    "nombre": "MacBook Pro 14” M2 Pro",
+    "marca": "Apple",
+    "categoria": "Laptops",
+    "precio": 2399.0,
+    "moneda": "USD",
+    "stock": 3,
+    "colores": [
+      { "color": "Gris espacial", "disponible": true },
+      { "color": "Plata", "disponible": true }
+    ],
+    "imagen": "./assets/images/mbp14.jpg",
+    "imagenes": [
+      "./assets/images/mbp14.jpg",
+      "./assets/images/mbp14_side.jpg",
+      "./assets/images/mbp14_back.jpg"
+    ],
+    "resena": "Potencia profesional con eficiencia para edición y desarrollo.",
+    "specs": [
+      "Apple M2 Pro 10-core",
+      "16GB RAM",
+      "SSD 512GB",
+      "Liquid Retina XDR"
+    ]
+  },
+  {
+    "id": "MS-LOGI-GPRO-003",
+    "nombre": "Logitech G Pro X Superlight",
+    "marca": "Logitech",
+    "categoria": "Accesorios",
+    "precio": 149.99,
+    "moneda": "USD",
+    "stock": 15,
+    "colores": [
+      { "color": "Negro", "disponible": true },
+      { "color": "Blanco", "disponible": true }
+    ],
+    "imagen": "./assets/images/logi_gpro.jpg",
+    "imagenes": [
+      "./assets/images/logi_gpro.jpg",
+      "./assets/images/logi_gpro_side.jpg"
+    ],
+    "resena": "Mouse inalámbrico ultraligero con sensor HERO.",
+    "specs": [
+      "Ligero 63g",
+      "Sensor 25K",
+      "PTFE sin aditivos"
+    ]
+  },
+  {
+    "id": "KB-HYPERX-ALLOY-004",
+    "nombre": "HyperX Alloy Origins",
+    "marca": "HyperX",
+    "categoria": "Accesorios",
+    "precio": 109.99,
+    "moneda": "USD",
+    "stock": 0,
+    "colores": [
+      { "color": "Negro", "disponible": false },
+      { "color": "Verde", "disponible": false }
+    ],
+    "imagen": "./assets/images/hyperx_alloy.jpg",
+    "imagenes": [
+      "./assets/images/hyperx_alloy.jpg",
+      "./assets/images/hyperx_alloy_back.jpg"
+    ],
+    "resena": "Teclado mecánico compacto con switches HyperX.",
+    "specs": [
+      "Switches Red",
+      "Carcasa aluminio",
+      "RGB por tecla"
+    ]
+  },
+  {
+    "id": "HD-SAMSUNG-1TB-005",
+    "nombre": "Samsung 990 EVO 1TB",
+    "marca": "Samsung",
+    "categoria": "Almacenamiento",
+    "precio": 99.0,
+    "moneda": "USD",
+    "stock": 25,
+    "colores": [{ "color": "Negro", "disponible": true }],
+    "imagen": "./assets/images/samsung_990.jpg",
+    "imagenes": [
+      "./assets/images/samsung_990.jpg",
+      "./assets/images/samsung_990_box.jpg"
+    ],
+    "resena": "SSD NVMe PCIe 4.0 con gran relación precio/rendimiento.",
+    "specs": ["Lectura 5000MB/s", "Escritura 4200MB/s"]
+  },
+  {
+    "id": "MN-ACER-27-006",
+    "nombre": "Acer Nitro 27'' 165Hz",
+    "marca": "Acer",
+    "categoria": "Monitores",
+    "precio": 229.0,
+    "moneda": "USD",
+    "stock": 7,
+    "colores": [{ "color": "Negro", "disponible": true }],
+    "imagen": "./assets/images/acer_27.jpg",
+    "imagenes": [
+      "./assets/images/acer_27.jpg",
+      "./assets/images/acer_27_back.jpg"
+    ],
+    "resena": "Monitor gaming 27 pulgadas 165Hz con FreeSync.",
+    "specs": ["IPS 1440p", "1ms MPRT", "HDR10"]
+  },
+  {
+    "id": "HP-VICTUS-15-007",
+    "nombre": "HP Victus 15",
+    "marca": "HP",
+    "categoria": "Laptops",
+    "precio": 949.0,
+    "moneda": "USD",
+    "stock": 10,
+    "colores": [
+      { "color": "Azul", "disponible": true },
+      { "color": "Rojo", "disponible": true }
+    ],
+    "imagen": "./assets/images/hp_victus.jpg",
+    "imagenes": [
+      "./assets/images/hp_victus.jpg",
+      "./assets/images/hp_victus_open.jpg"
+    ],
+    "resena": "Equilibrio para gaming ligero y productividad.",
+    "specs": ["Ryzen 7 7840HS", "16GB RAM", "RTX 3050", "SSD 512GB"]
+  },
+  {
+    "id": "LN-LG-32-008",
+    "nombre": "LG Ultragear 32'' 170Hz",
+    "marca": "LG",
+    "categoria": "Monitores",
+    "precio": 399.0,
+    "moneda": "USD",
+    "stock": 4,
+    "colores": [{ "color": "Negro", "disponible": true }],
+    "imagen": "./assets/images/lg_32.jpg",
+    "imagenes": [
+      "./assets/images/lg_32.jpg",
+      "./assets/images/lg_32_side.jpg"
+    ],
+    "resena": "Panel veloz para e-sports con gran tamaño.",
+    "specs": ["IPS 1440p", "170Hz", "G-Sync compatible"]
+  },
+  {
+    "id": "AU-STEELSERIES-009",
+    "nombre": "SteelSeries Arctis Nova 7",
+    "marca": "SteelSeries",
+    "categoria": "Audio",
+    "precio": 169.0,
+    "moneda": "USD",
+    "stock": 6,
+    "colores": [
+      { "color": "Negro", "disponible": true },
+      { "color": "Verde", "disponible": false }
+    ],
+    "imagen": "./assets/images/arctis_nova7.jpg",
+    "imagenes": [
+      "./assets/images/arctis_nova7.jpg",
+      "./assets/images/arctis_nova7_side.jpg"
+    ],
+    "resena": "Auriculares inalámbricos multiplataforma con buen micrófono.",
+    "specs": ["2.4GHz + BT", "Sonido espacial", "Batería 38h"]
+  },
+  {
+    "id": "MB-ASUS-TUF-010",
+    "nombre": "ASUS TUF B650-PLUS",
+    "marca": "ASUS",
+    "categoria": "Componentes",
+    "precio": 229.0,
+    "moneda": "USD",
+    "stock": 12,
+    "colores": [{ "color": "Negro", "disponible": true }],
+    "imagen": "./assets/images/asus_tuf_b650.jpg",
+    "imagenes": [
+      "./assets/images/asus_tuf_b650.jpg",
+      "./assets/images/asus_tuf_b650_box.jpg"
+    ],
+    "resena": "Placa madre robusta para Ryzen AM5.",
+    "specs": ["PCIe 5.0", "DDR5", "VRM 12+2"]
+  },
+  {
+    "id": "GC-MSI-4060-011",
+    "nombre": "MSI GeForce RTX 4060 Ventus 2X",
+    "marca": "MSI",
+    "categoria": "Componentes",
+    "precio": 329.0,
+    "moneda": "USD",
+    "stock": 5,
+    "colores": [{ "color": "Negro", "disponible": true }],
+    "imagen": "./assets/images/msi_4060.jpg",
+    "imagenes": [
+      "./assets/images/msi_4060.jpg",
+      "./assets/images/msi_4060_back.jpg"
+    ],
+    "resena": "GPU eficiente para 1080p/1440p.",
+    "specs": ["8GB GDDR6", "DLSS 3", "Ray Tracing"]
+  },
+  {
+    "id": "CM-NZXT-H510-012",
+    "nombre": "NZXT H510",
+    "marca": "NZXT",
+    "categoria": "Gabinetes",
+    "precio": 99.0,
+    "moneda": "USD",
+    "stock": 9,
+    "colores": [
+      { "color": "Negro", "disponible": true },
+      { "color": "Blanco", "disponible": true }
+    ],
+    "imagen": "./assets/images/nzxt_h510.jpg",
+    "imagenes": [
+      "./assets/images/nzxt_h510.jpg",
+      "./assets/images/nzxt_h510_side.jpg",
+      "./assets/images/nzxt_h510_back.jpg"
+    ],
+    "resena": "Chasis minimalista con buen flujo de aire.",
+    "specs": ["ATX Mid Tower", "Vidrio templado"]
+  }
+,
+{
+  "id": "LT-DELL-XPS13-013",
+  "nombre": "Dell XPS 13 Plus",
+  "marca": "Dell",
+  "categoria": "Laptops",
+  "precio": 1699.0,
+  "moneda": "USD",
+  "stock": 8,
+  "colores": [
+    {"color": "Plata", "disponible": true},
+    {"color": "Negro", "disponible": true}
+  ],
+  "imagen": "./assets/images/dell_xps13.jpg",
+  "imagenes": [
+    "./assets/images/dell_xps13.jpg",
+    "./assets/images/dell_xps13_side.jpg"
+  ],
+  "resena": "Ultraportátil premium con pantalla OLED y gran autonomía.",
+  "specs": ["Intel i7 13ª", "16GB RAM", "SSD 1TB", "Pantalla OLED 3.5K"]
+},
+{
+  "id": "PH-SAMSUNG-S24U-014",
+  "nombre": "Samsung Galaxy S24 Ultra",
+  "marca": "Samsung",
+  "categoria": "Teléfonos",
+  "precio": 1299.0,
+  "moneda": "USD",
+  "stock": 20,
+  "colores": [
+    {"color": "Negro", "disponible": true},
+    {"color": "Titanio", "disponible": true}
+  ],
+  "imagen": "./assets/images/galaxy_s24u.jpg",
+  "imagenes": [
+    "./assets/images/galaxy_s24u.jpg",
+    "./assets/images/galaxy_s24u_back.jpg"
+  ],
+  "resena": "Teléfono insignia con cámara profesional y S-Pen integrado.",
+  "specs": ["Snapdragon 8 Gen 3", "200MP cámara", "AMOLED 6.8'' 120Hz"]
+},
+{
+  "id": "PH-IPHONE15P-015",
+  "nombre": "iPhone 15 Pro Max",
+  "marca": "Apple",
+  "categoria": "Teléfonos",
+  "precio": 1399.0,
+  "moneda": "USD",
+  "stock": 15,
+  "colores": [
+    {"color": "Titanio natural", "disponible": true},
+    {"color": "Negro espacial", "disponible": true}
+  ],
+  "imagen": "./assets/images/iphone15_pro.jpg",
+  "imagenes": [
+    "./assets/images/iphone15_pro.jpg",
+    "./assets/images/iphone15_pro_back.jpg"
+  ],
+  "resena": "El smartphone más avanzado con chip A17 Pro y cámara triple.",
+  "specs": ["A17 Pro", "Pantalla 120Hz", "USB-C", "Zoom óptico 5x"]
+},
+{
+  "id": "AC-RAZER-VIPER-016",
+  "nombre": "Razer Viper V3 Pro",
+  "marca": "Razer",
+  "categoria": "Accesorios",
+  "precio": 179.99,
+  "moneda": "USD",
+  "stock": 10,
+  "colores": [
+    {"color": "Negro", "disponible": true},
+    {"color": "Blanco", "disponible": true}
+  ],
+  "imagen": "./assets/images/razer_viper.jpg",
+  "imagenes": [
+    "./assets/images/razer_viper.jpg",
+    "./assets/images/razer_viper_back.jpg"
+  ],
+  "resena": "Mouse inalámbrico ultraligero con sensor Focus Pro 35K.",
+  "specs": ["Peso 54g", "2000Hz polling", "USB-C recargable"]
+},
+{
+  "id": "HP-OMEN-17-017",
+  "nombre": "HP Omen 17",
+  "marca": "HP",
+  "categoria": "Laptops",
+  "precio": 1799.0,
+  "moneda": "USD",
+  "stock": 5,
+  "colores": [{"color": "Negro", "disponible": true}],
+  "imagen": "./assets/images/hp_omen17.jpg",
+  "imagenes": [
+    "./assets/images/hp_omen17.jpg",
+    "./assets/images/hp_omen17_side.jpg"
+  ],
+  "resena": "Laptop gamer con RTX 4070 y pantalla QHD 240Hz.",
+  "specs": ["i9 13ª Gen", "32GB RAM", "RTX 4070", "SSD 1TB"]
+},
+{
+  "id": "MN-GIGABYTE-32-018",
+  "nombre": "Gigabyte M32U 32'' 4K 144Hz",
+  "marca": "Gigabyte",
+  "categoria": "Monitores",
+  "precio": 699.0,
+  "moneda": "USD",
+  "stock": 3,
+  "colores": [{"color": "Negro", "disponible": true}],
+  "imagen": "./assets/images/gigabyte_m32u.jpg",
+  "imagenes": [
+    "./assets/images/gigabyte_m32u.jpg",
+    "./assets/images/gigabyte_m32u_back.jpg"
+  ],
+  "resena": "Monitor 4K con HDMI 2.1 ideal para consolas y PC gamer.",
+  "specs": ["4K UHD", "144Hz", "HDR400", "HDMI 2.1"]
+},
+{
+  "id": "AU-LOGITECH-ZONEVIBE-019",
+  "nombre": "Logitech Zone Vibe 100",
+  "marca": "Logitech",
+  "categoria": "Audio",
+  "precio": 99.0,
+  "moneda": "USD",
+  "stock": 18,
+  "colores": [{"color": "Gris", "disponible": true}],
+  "imagen": "./assets/images/logitech_zonevibe.jpg",
+  "imagenes": [
+    "./assets/images/logitech_zonevibe.jpg"
+  ],
+  "resena": "Auriculares Bluetooth ligeros para trabajo y entretenimiento.",
+  "specs": ["Bluetooth 5.2", "Micrófono con cancelación", "40h autonomía"]
+},
+{
+  "id": "CM-CORSAIR-LL120-020",
+  "nombre": "Corsair LL120 RGB Fans",
+  "marca": "Corsair",
+  "categoria": "Componentes",
+  "precio": 129.0,
+  "moneda": "USD",
+  "stock": 22,
+  "colores": [{"color": "Negro", "disponible": true}],
+  "imagen": "./assets/images/corsair_ll120.jpg",
+  "imagenes": [
+    "./assets/images/corsair_ll120.jpg"
+  ],
+  "resena": "Ventiladores RGB con controlador iCUE incluido.",
+  "specs": ["120mm", "16 LEDs", "PWM", "Kit de 3 unidades"]
+},
+{
+  "id": "SP-SANDISK-1TB-021",
+  "nombre": "SanDisk Extreme Portable 1TB",
+  "marca": "SanDisk",
+  "categoria": "Almacenamiento",
+  "precio": 139.0,
+  "moneda": "USD",
+  "stock": 14,
+  "colores": [{"color": "Negro", "disponible": true}],
+  "imagen": "./assets/images/sandisk_extreme.jpg",
+  "imagenes": [
+    "./assets/images/sandisk_extreme.jpg"
+  ],
+  "resena": "SSD portátil resistente al agua y golpes.",
+  "specs": ["USB-C 3.2", "1050MB/s lectura", "IP55 resistente"]
+},
+{
+  "id": "LT-ASUS-ZEBOOK14-022",
+  "nombre": "ASUS ZenBook 14 OLED",
+  "marca": "ASUS",
+  "categoria": "Laptops",
+  "precio": 1249.0,
+  "moneda": "USD",
+  "stock": 6,
+  "colores": [{"color": "Gris", "disponible": true}],
+  "imagen": "./assets/images/asus_zenbook14.jpg",
+  "imagenes": [
+    "./assets/images/asus_zenbook14.jpg"
+  ],
+  "resena": "Ultrabook ligero con pantalla OLED FullHD y Ryzen 7.",
+  "specs": ["Ryzen 7 7730U", "16GB RAM", "SSD 1TB", "OLED 14''"]
+},
+{
+  "id": "KB-LOGITECH-MX-MECH-023",
+  "nombre": "Logitech MX Mechanical",
+  "marca": "Logitech",
+  "categoria": "Accesorios",
+  "precio": 149.0,
+  "moneda": "USD",
+  "stock": 11,
+  "colores": [{"color": "Gris oscuro", "disponible": true}],
+  "imagen": "./assets/images/mx_mechanical.jpg",
+  "imagenes": [
+    "./assets/images/mx_mechanical.jpg"
+  ],
+  "resena": "Teclado mecánico inalámbrico premium con teclas silenciosas.",
+  "specs": ["Bluetooth + USB", "Switches Tactile Quiet", "Retroiluminado"]
+},
+{
+  "id": "LT-LENOVO-YOGA7-024",
+  "nombre": "Lenovo Yoga 7i 2 en 1",
+  "marca": "Lenovo",
+  "categoria": "Laptops",
+  "precio": 1099.0,
+  "moneda": "USD",
+  "stock": 9,
+  "colores": [{"color": "Azul", "disponible": true}],
+  "imagen": "./assets/images/lenovo_yoga7.jpg",
+  "imagenes": [
+    "./assets/images/lenovo_yoga7.jpg",
+    "./assets/images/lenovo_yoga7_fold.jpg"
+  ],
+  "resena": "Convertible 2 en 1 con pantalla táctil y lápiz incluido.",
+  "specs": ["Intel i7 13ª", "16GB RAM", "SSD 512GB", "Pantalla táctil 14''"]
+},
+{
+  "id": "CM-ASUS-RTX4070-025",
+  "nombre": "ASUS RTX 4070 Dual OC",
+  "marca": "ASUS",
+  "categoria": "Componentes",
+  "precio": 649.0,
+  "moneda": "USD",
+  "stock": 5,
+  "colores": [{"color": "Negro", "disponible": true}],
+  "imagen": "./assets/images/asus_rtx4070.jpg",
+  "imagenes": [
+    "./assets/images/asus_rtx4070.jpg",
+    "./assets/images/asus_rtx4070_side.jpg"
+  ],
+  "resena": "Gráfica potente para 1440p con refrigeración dual.",
+  "specs": ["12GB GDDR6X", "DLSS 3", "Ray Tracing", "HDMI 2.1"]
+},
+{
+  "id": "AU-HYPERX-CLOUD3-026",
+  "nombre": "HyperX Cloud III Wireless",
+  "marca": "HyperX",
+  "categoria": "Audio",
+  "precio": 169.0,
+  "moneda": "USD",
+  "stock": 8,
+  "colores": [{"color": "Negro", "disponible": true}],
+  "imagen": "./assets/images/hyperx_cloud3.jpg",
+  "imagenes": [
+    "./assets/images/hyperx_cloud3.jpg"
+  ],
+  "resena": "Headset inalámbrico para gaming con sonido envolvente.",
+  "specs": ["2.4GHz", "40h batería", "Drivers 53mm"]
+},
+{
+  "id": "AC-LOGITECH-MXMASTER3S-027",
+  "nombre": "Logitech MX Master 3S",
+  "marca": "Logitech",
+  "categoria": "Accesorios",
+  "precio": 119.0,
+  "moneda": "USD",
+  "stock": 10,
+  "colores": [{"color": "Grafito", "disponible": true}],
+  "imagen": "./assets/images/mx_master3s.jpg",
+  "imagenes": [
+    "./assets/images/mx_master3s.jpg"
+  ],
+  "resena": "Mouse profesional con scroll electromagnético y USB-C.",
+  "specs": ["Bluetooth + USB", "Sensor 8000 DPI", "Carga rápida"]
+}
+]

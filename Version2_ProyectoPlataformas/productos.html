@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo · New Era Tech</title>
+  <meta name="description" content="Catálogo de productos: laptops, componentes, monitores y accesorios.">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a href="./index.html" class="brand"><span class="dot"></span> New Era Tech</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="./index.html">Inicio</a>
+      <a href="./productos.html" aria-current="page">Productos</a>
+      <a href="#" id="link-contacto">Contacto</a>
+      <a href="./carrito.html" id="cart-link" class="badge-cart">🛒 Carrito (0)</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container" id="catalogo" aria-labelledby="t-cat">
+  <h1 id="t-cat" style="margin:1.2rem 0;">Catálogo</h1>
+
+  <form id="filtros" class="grid" style="grid-template-columns:1fr; gap:.6rem; margin: .5rem 0 1rem">
+    <input id="q" name="q" placeholder="Buscar por nombre o marca…" aria-label="Buscar" />
+    <select id="cat" name="cat" aria-label="Categoría">
+      <option value="">Todas las categorías</option>
+      <option>Laptops</option><option>Componentes</option><option>Accesorios</option>
+      <option>Monitores</option><option>Audio</option><option>Almacenamiento</option><option>Gabinetes</option>
+    </select>
+  </form>
+
+  <ul id="grid-productos" class="grid cards-3" aria-live="polite"></ul>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 New Era Tech · Quito, Ecuador · Envíos a nivel nacional</p>
+  </div>
+</footer>
+
+<script src="./scripts/app.js" defer></script>
+<script>
+  window.PAGE = "productos";
+</script>
+</body>
+</html>

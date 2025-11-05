@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Era Tech · Tienda de Tecnología</title>
+  <meta name="description" content="E-commerce de tecnología en Ecuador: laptops, componentes y accesorios.">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a href="./index.html" class="brand"><span class="dot"></span> New Era Tech</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="./index.html">Inicio</a>
+      <a href="./productos.html">Productos</a>
+      <a href="./contacto.html" id="link-contacto">Contacto</a>
+      <a href="./carrito.html" id="cart-link" class="badge-cart">🛒 Carrito (0)</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <article class="hero-card">
+      <div class="hero-content">
+        <h1>Rendimiento que despega tu estudio y trabajo</h1>
+        <p>Equipos y componentes listos para desafíos reales: desarrollo, edición, gaming y universidad.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="./productos.html">Ver catálogo</a>
+          <a class="btn" href="#ofertas">Ofertas destacadas</a>
+        </div>
+
+        <!-- bloque de info adicional -->
+        <div class="hero-extra">
+          <p>💻 Envíos rápidos a todo Ecuador · Garantía de fábrica · Asesoría técnica</p>
+        </div>
+      </div>
+
+      <!--  Imagen principal o carrusel -->
+      <div class="thumb">
+        <img src="./assets/images/hero-laptop.png" alt="Laptops y periféricos de última generación" class="hero-img">
+      </div>
+    </article>
+  </section>
+
+  <section id="destacados" aria-labelledby="t-dest">
+    <h2 id="t-dest" style="margin:1.2rem 0;">Destacados</h2>
+    <ul id="grid-destacados" class="grid cards-3" aria-live="polite"></ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 New Era Tech · Quito, Ecuador · Envíos a nivel nacional</p>
+  </div>
+</footer>
+
+<script src="./scripts/app.js" defer></script>
+<script>
+  window.PAGE = "home";
+</script>
+</body>
+</html>
